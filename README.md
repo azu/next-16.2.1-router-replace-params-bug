@@ -14,11 +14,11 @@ This is a regression from Next.js 16.1.6, where `router.replace("/page-a")` corr
 ## Reproduction
 
 ```bash
-npm install
-npm run build
-npm run start
+pnpm install
+pnpm run build
+pnpm run start
 # In another terminal:
-npm test
+pnpm test
 ```
 
 ### Expected output (Next.js 16.1.6)
