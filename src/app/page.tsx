@@ -1,16 +1,12 @@
-"use client";
-
-import Link from "next/link";
-
 export default function Home() {
   return (
     <div style={{ padding: 20 }}>
-      <h1>router.replace query param test</h1>
+      <h1>Next.js 16.2.1 router.replace query params bug</h1>
       <p>
-        <Link href="/page-a?foo=bar&test=true">
-          Go to /page-a?foo=bar&test=true
-        </Link>
+        To reproduce, open this URL directly (full page load):
       </p>
+      <pre>http://localhost:3099/page-a?foo=bar&amp;test=true</pre>
+      <p>Then follow Step 2 → Step 3 on that page.</p>
     </div>
   );
 }
